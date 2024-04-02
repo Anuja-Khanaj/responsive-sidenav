@@ -1,0 +1,101 @@
+h1 {
+    padding: 0 1rem;
+}
+
+h2 {padding: 1rem;}
+
+.expanded {
+    width: 250px;   
+}
+.logout{
+    width: -webkit-fill-available;
+    margin: 10px;
+    margin-top: 9rem;
+    background-color: #624DE3;
+    color: white;
+    text-align: start;
+    outline: none;
+    border: none;
+    padding: 2px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.mat-icon{
+    height: 3rem;
+    width: 3rem;
+}
+
+mat-toolbar{
+    position:fixed;
+    top:0;
+    z-index: 2;
+}
+
+mat-icon{
+    padding: 10px;
+}
+
+mat-sidenav{
+    width: fit-content;
+    padding-top: 2px;
+    box-shadow: rgba(169, 169, 169, 0.441)  1px 3px 19px 2px;
+    color: #5D7285;
+}
+
+mat-sidenav .entry:hover{
+  color: #624DE3;
+}
+
+mat-sidenav-container {
+    height:100%;
+  
+}
+ul {
+    list-style: none;
+    position: relative;
+    text-align: start;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+ul.display {
+    max-height: 200px; /* Adjust the max height as needed */
+    opacity: 1;
+}
+
+li{
+    padding: 5px;
+    color: black;
+}
+
+li:hover{
+    background-color: rgba(128, 128, 128, 0.272);
+}
+
+ /* Move the content down so that it won't be hidden by the toolbar */
+mat-sidenav {
+    padding-top: 3.5rem;
+    @media screen and (min-width: 600px) {
+      padding-top: 4rem;
+    }
+
+    .entry{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding:0.75rem;
+    }
+  }
+
+ /* Move the content down so that it won't be hidden by the toolbar */
+mat-sidenav-content{
+    padding-top: 3.5rem;
+    @media screen and (min-width: 600px) {
+        padding-top: 4rem;
+    }
+}
